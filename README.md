@@ -18,11 +18,12 @@ First release<br>
 
 SSH into your USG:<br>
 <br>
-sudo su -<br>
-curl -o /config/user-data/update-adblock-dnsmasq.sh https://raw.githubusercontent.com/Ar0xA/USG-DNS-ADBLOCK/master/update-adblock-dnsmasq.sh<br>
-chmod +x /config/user-data/update-adblock-dnsmasq.sh<br>
-/config/user-data/update-adblock-dnsmasq.sh<br>
-
+```
+sudo su -
+curl -o /config/user-data/update-adblock-dnsmasq.sh https://raw.githubusercontent.com/Ar0xA/USG-DNS-ADBLOCK/master/update-adblock-dnsmasq.sh`
+chmod +x /config/user-data/update-adblock-dnsmasq.sh
+/config/user-data/update-adblock-dnsmasq.sh
+```
 
 Check if all went fine by nslookup on a box that uses your USG as DNS (default from DHCP)<br>
 nslookup aa.i-stream.pl (should return address: 0.0.0.0)<br>
